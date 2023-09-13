@@ -1,0 +1,45 @@
+﻿<Window x:Name="MainWin" x:Class="BindConst.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindConst"
+        mc:Ignorable="d"
+        Title="BindConstCalc" Height="525" Width="1010" Loaded="Window_Loaded" HorizontalAlignment="Left" VerticalAlignment="Top" Left="200" Top="200" Closed="MainWin_Closed" ResizeMode="CanMinimize">
+    <Grid x:Name="MainGrid" RenderTransformOrigin="0.56,0.113" Margin="0,0,-8,0">
+
+        <Border x:Name="BorderCanvas" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="450" Margin="286,27,0,0" VerticalAlignment="Top" Width="710" RenderTransformOrigin="0.53,0.494"/>
+        <Button x:Name="ButtonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="175,23,0,0" VerticalAlignment="Top" Width="60" Click="ButtonCalculate_Click" Height="20"/>
+        <Canvas x:Name="CanvasCurve" HorizontalAlignment="Left" Height="440" Margin="291,34,0,0" VerticalAlignment="Top" Width="700" Background="#FFE8E5E5"/>
+
+        <Label x:Name="LabelConc" Content="Conc (mol/l) at 1:1 G:H" HorizontalAlignment="Left" Height="25" Margin="10,48,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="TextBoxConc" HorizontalAlignment="Left" Height="19" Margin="40,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="LabelNumberCaption" Content="#" HorizontalAlignment="Left" Height="25" Margin="9,97,0,0" VerticalAlignment="Top" Width="20"/>
+        <Label x:Name="LabelRatio" Content="[G]:[H]" HorizontalAlignment="Left" Height="25" Margin="22,97,0,0" VerticalAlignment="Top" Width="45" ToolTip="Conc of guest / conc of host"/>
+        <Label x:Name="LabelAbs" Content="Abs" HorizontalAlignment="Left" Margin="80,97,0,0" VerticalAlignment="Top" Width="34" Height="26" ToolTip="Measured absorbance value"/>
+
+        <Label x:Name="LabelKa" Content="Ka" HorizontalAlignment="Left" Height="25" Width="30" Margin="197,70,0,0" VerticalAlignment="Top" ToolTip="Binding constant"/>
+        <TextBlock x:Name="TextBlockKa" HorizontalAlignment="Left" Height="18" Margin="220,75,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="LabelpKa" Content="pKa" HorizontalAlignment="Left" Height="25" Width="30" Margin="190,90,0,0" VerticalAlignment="Top" ToolTip="Log10 of Ka value"/>
+        <TextBlock x:Name="TextBlockpKa" HorizontalAlignment="Left" Height="18" Margin="220,95,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="LabelInf" Content="ΔA.inf" HorizontalAlignment="Left" Height="25" Width="45" Margin="178,110,0,0" VerticalAlignment="Top" ToolTip="The extrapolated abs change where [G]->inﬁnity."/>
+        <TextBlock x:Name="TextBlockInf" HorizontalAlignment="Left" Height="18" Margin="220,115,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+
+        <Button x:Name="Buttonwew" Content="New" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="50" Height="20"/>
+        <Button x:Name="ButtonLoad" Content="Open" HorizontalAlignment="Left" Margin="65,23,0,0" VerticalAlignment="Top" Width="50" Click="ButtonLoad_Click" Height="20" />
+        <Button x:Name="ButtonSave" Content="Save" HorizontalAlignment="Left" Margin="120,23,0,0" VerticalAlignment="Top" Width="50" Click="ButtonSave_Click" Height="20"/>
+        <Button x:Name="ButtonErase" Content="X" HorizontalAlignment="Left" Height="20" Margin="240,23,0,0" VerticalAlignment="Top" Width="23" Click="Button_Click_2"/>
+
+        <Menu Height="20" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.ColumnSpan="3">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="MenuNew" Header="_New" InputGestureText="Ctrl+N"/>
+                <MenuItem x:Name="MenuOpen" Header="_Open" InputGestureText="Ctrl+O"/>
+                <MenuItem x:Name="MenuSave" Header="_Save" InputGestureText="Ctrl+S"/>
+                <MenuItem x:Name="MenuaSaveAs" Header="_Save as"/>
+                <Separator/>
+                <MenuItem x:Name="MenuExit" Header="_Exit"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

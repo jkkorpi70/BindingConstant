@@ -1,0 +1,15 @@
+C:\Users\Juha\source\repos\BindConst\BindConst\bin\Debug\BindConst.exe.config
+C:\Users\Juha\source\repos\BindConst\BindConst\bin\Debug\BindConst.exe
+C:\Users\Juha\source\repos\BindConst\BindConst\bin\Debug\BindConst.pdb
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.csprojAssemblyReference.cache
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\MainWindow.g.cs
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\App.g.cs
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst_MarkupCompile.cache
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst_MarkupCompile.lref
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\MainWindow.baml
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.g.resources
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.Properties.Resources.resources
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.csproj.GenerateResource.cache
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.csproj.CoreCompileInputs.cache
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.exe
+C:\Users\Juha\source\repos\BindConst\BindConst\obj\Debug\BindConst.pdb
